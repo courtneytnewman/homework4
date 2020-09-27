@@ -88,6 +88,7 @@ header{
     color: white;
     height: 400px;                /* Parallax effect */
     background-image: url("../images/header.jpg");
+    
   /*Your Code Here*/
   /*Set background-image to header.jpg */
   grid-column: 1 / -1;  /*Can you explain what this does?*/
@@ -102,12 +103,16 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  /*Your Code Here*/
+  grid-column: 2 / span 1;
+  grid-row: span 1;
 
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
   /*Your Code Here*/
+    
+    max-height: 700px;
+    
 
 }
 
@@ -149,6 +154,7 @@ background-color: rgba(255, 255, 255, .8);
   }
 
   .container{
+   /* Your code here:*/
 
   }
 
