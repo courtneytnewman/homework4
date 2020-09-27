@@ -80,13 +80,14 @@ footer{
 }
 
 header{
-  background-attachment: fixed; /* Parallax effect */     
-  background-position: center;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
-  color: white;
-  height: 400px;                /* Parallax effect */
-
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    color: white;
+    height: 400px;                /* Parallax effect */
+    background-image: url("../images/header.jpg");
+    backrgound-repeat: none;
   /*Your Code Here*/
   /*Set background-image to header.jpg */
  
@@ -150,7 +151,9 @@ background-color: rgba(255, 255, 255, .8);
   }
 
   .container{
-    /*Your code here:*/
+      grid-template-columns: 1fr 5fr 1fr;
+      grid-template-rows: auto;
+      grid-row-gap: 15px;
   }
 
   .about, .clients, .method-image, .contact-image{
