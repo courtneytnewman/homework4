@@ -87,11 +87,8 @@ header{
     color: white;
     height: 400px;                /* Parallax effect */
     background-image: url("../images/header.jpg");
-    backrgound-repeat: none;
   /*Your Code Here*/
   /*Set background-image to header.jpg */
- 
-
   grid-column: 1 / -1;  /*Can you explain what this does?*/
   grid-row: 1 / auto;   /*Can you rewrite it?*/
 }
