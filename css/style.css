@@ -104,15 +104,19 @@ header p{
 
 .about, .method, .clients, .contact{
   grid-column: 2 / span 1;
-  grid-row: span 1;
+  grid-row-start: 2;
+  grid-template-row: repeat(4, span 1);
 
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
   /*Your Code Here*/
     
-    max-height: 700px;
-    
+    grid-template-column: minmax(auto, 700px);
+    column-span: all;
+    overflow: hidden;
+    grid-row-start: 2;
+    repeat(4, span 1);
 
 }
 
@@ -139,11 +143,11 @@ header p{
 }
 
 .text-block{
-background-color: rgba(255, 255, 255, .8);
-  border: 10px solid black;
-  padding: 30px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 10px solid black;
+    padding: 30px;
+    align-items: center;
   /*Your code here:*/
-
 }
 
 
@@ -159,7 +163,7 @@ background-color: rgba(255, 255, 255, .8);
   }
 
   .about, .clients, .method-image, .contact-image{
-    /*Your code here:*/
+  
   }
 
   .about-image, .clients-image, .method, .contact{
