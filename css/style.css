@@ -181,8 +181,7 @@ preferences to reduce motion.*/
     -webkit-transition: none; /* sets to default setting */
     transition: none;        /* sets to default setting */
    }
-
-  /*Turn off parallax*/
+    
   header{
     background-attachment: initial;
   }
